@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SECURITY RESEARCH PoC — Subdomain Takeover</title>
+<style>
+body{font-family:monospace;background:#0a0a0a;color:#00ff41;padding:40px;line-height:1.6}
+h1{color:#ff0040;border-bottom:2px solid #ff0040;padding-bottom:10px}
+.box{background:#111;border:1px solid #333;padding:20px;margin:20px 0;border-radius:4px}
+.warn{color:#ffaa00}
+</style>
+</head>
+<body>
+<h1>SUBDOMAIN TAKEOVER — PROOF OF CONCEPT</h1>
+<div class="box">
+<p><strong>Target:</strong> docs.fintual.in</p>
+<p><strong>CNAME:</strong> fintual.github.io</p>
+<p><strong>Status:</strong> <span style="color:#ff0040">SUCCESSFULLY TAKEN OVER</span></p>
+<p><strong>Researcher:</strong> rizzdkp (via GitHub Pages)</p>
+<p><strong>Date:</strong> 2026-10-30</p>
+</div>
+<div class="box">
+<p class="warn">This page demonstrates that docs.fintual.in is vulnerable to subdomain takeover.</p>
+<p>The CNAME record points to fintual.github.io, which was unclaimed on GitHub Pages.</p>
+<p>This PoC was created for responsible disclosure to Fintual's security team.</p>
+<p>Contact: security@fintual.com</p>
+</div>
+</body>
+</html>
